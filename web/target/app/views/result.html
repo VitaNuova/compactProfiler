@@ -1,0 +1,59 @@
+<!--
+/**
+ *  Copyright 2016 Viktoriia Bakalova
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and limitations under the License.
+ */
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-success">
+                <div class="panel-heading"><h4>Minimal JRE Profile Required</h4></div>
+                <div class="panel-body"><h4>{{minimalProfile}}</h4></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="nav nav-tabs nav-justified">
+                <li ng-class="{active: isSelected(1)}">
+                    <a ng-click="select(1)">Packages Within The Required Profile</a>
+                </li>
+                <li ng-class="{active: isSelected(2)}">
+                    <a ng-click="select(2)">Packages Outside The Required Profile</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" ng-if="isSelected(1)" ng-repeat="package in inProfilePackages">
+                    <div class="row">
+                        <div class="col-sm-6">{{package.packageName}}</div>
+                        <div class="col-sm-6"><i><strong>{{package.profileName}}</strong></i></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in active" ng-if = "isSelected(2)" ng-repeat="package in outsideProfilePackages">
+                    <div class="row">
+                        <div class="col-sm-6">{{package.packageName}}</div>
+                        <div class="col-sm-6"><i><strong>{{package.profileName}}</strong></i></div>
+                    </div>
+                </div>
+                <p style="padding: 40px;"></p>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <input type="text"  id="filter" class="form-control" ng-model="filterText">
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="button" class="btn btn-primary btn-block" ng-click="filterValues()">Filter</button>
+                     <!--   <button type="button" class="btn btn-primary" ng-click="resetFilter()">Reset</button> -->
+                    </div>
+                    <div class="col-xs-3"><button type="button" class="btn btn-primary btn-block" ng-click="toggleProfile()">{{profileSort ? 'Return to Previous' : 'Sort by profile'}}</button></div>
+                    <div class="col-xs-3"><button type="button" class="btn btn-primary btn-block" ng-click="toggleAlphabetic()">{{alphabeticSort ? 'Return to Previous' : 'Sort alphabetically'}}</button></div>
+                    <div class="col-xs-2 col-xs-push-1"><button type="button" class="btn btn-primary" ng-click="resetAll()">Reset All</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

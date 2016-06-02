@@ -1,0 +1,17 @@
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/resolver/MavenCompactProfileResolver.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/CompactProfileAnalyzer.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/resolver/strategy/NonExclusivePolicy.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/validator/JarValidator.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/enums/CompactProfile.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/CompactProfileAnalyzerImpl.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/resolver/strategy/NonFilteringTransitiveStrategy.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/util/IOUtils.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/exceptions/ResolverException.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/validator/BasicValidator.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/resolver/ClasspathCompactProfileResolver.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/result/PackageProfilePair.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/resolver/CompactProfileResolver.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/enums/ResolutionType.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/analyzer/result/AnalysisResult.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/MainClass.java
+/home/viki/workspace/compactProfilerWeb/backend/src/main/java/cz/muni/fi/sbapr/exceptions/AnalyzerException.java
